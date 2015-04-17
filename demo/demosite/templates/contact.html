@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+	{% block body-content %}	
+		<div class="container">
+			<header class="siteHeader clearfix">
+				<h1 class="logo">CONTACT</h1>
+				{% include "menu.html" %}
+			</header>
+
+			<div class="feature">
+				<h1 class="feature-title">Address</h1>
+
+				<p class="feature-description">
+				{{STREET_ADDRESS}} <br>
+				{{CITY}}, {{STATE}}					
+				</p>
+			</div>
+
+
+			{% include "footer.html" %}
+		</div>
+		<!-- container -->
+		
+	{% endblock %}

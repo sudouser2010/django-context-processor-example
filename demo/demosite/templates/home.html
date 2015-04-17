@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+	{% block body-content %}	
+		<div class="container">
+			<header class="siteHeader clearfix">
+				<h1 class="logo">HOME</h1>
+				{% include "menu.html" %}
+			</header>
+
+			<div class="feature">
+				<h1 class="feature-title">{{COMPANY_NAME}}</h1>
+
+				<p class="feature-description">
+					Welcome to the {{COMPANY_NAME}}.<br>
+					This is the best place on Earth to {{COMPANY_SERVICE}} !
+					
+				</p>
+
+				<a class="btn btn-large bg-blue">Read More</a>
+			</div>
+
+			<main class="siteContent">
+				<div class="row gutters">
+					<div class="column-8">
+						<h3>Heading</h3>
+
+						<p>An sincerity so extremity he additions. Her yet 
+						there truth merit. Mrs all projecting favourable 
+						now unpleasing. Prosperous now 
+						devonshire diminution law. </p>
+					</div>
+
+					<div class="column-8">
+						<h3>Heading</h3>
+
+						<p>His exquisite sincerity education shameless 
+						ten earnestly breakfast add. So we me unknown as
+						 improve hastily sitting forming. Especially 
+						 favourable compliment.</p>
+					</div>
+				</div>
+			</main>
+
+			{% include "footer.html" %}
+		</div>
+		<!-- container -->
+		
+	{% endblock %}
